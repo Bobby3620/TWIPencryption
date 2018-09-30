@@ -42,8 +42,9 @@ public class Main {
             else if(i == 5){
                 System.out.print(ee);
             }
-            else{
-                System.out.println(" The rest isn't encrypted: " + kbWord.charAt(wordLen - 1));
+            else if(i > 5){
+                System.out.println(" The rest isn't encrypted: " + kbWord.substring(5, wordLen));
+                break;
             }
         }
 
