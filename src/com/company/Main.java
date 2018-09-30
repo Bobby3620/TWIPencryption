@@ -26,7 +26,7 @@ public class Main {
         int ee = (int)e;//5
 
         //Decides if it's binary, octal, decimal, hex, ASCII
-        for(int i = sp; i <= 5; i++){
+        for(int i = sp; i <= wordLen; i++){
             if(i == 1){
                 System.out.print("The encryption of" + " " + kbWord + " is " + a);
             }
@@ -41,6 +41,9 @@ public class Main {
             }
             else if(i == 5){
                 System.out.print(ee);
+            }
+            else{
+                System.out.println(" The rest isn't encrypted: " + kbWord.charAt(wordLen - 1));
             }
         }
 
